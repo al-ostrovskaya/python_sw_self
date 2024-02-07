@@ -1,5 +1,5 @@
 from selenium import webdriver
-import unittest, time, re
+import unittest
 
 class UntitledTestCase(unittest.TestCase):
     def setUp(self):
