@@ -1,6 +1,4 @@
 from selenium import webdriver
-from selenium.common.exceptions import NoSuchElementException
-from selenium.common.exceptions import NoAlertPresentException
 import unittest, time, re
 
 class UntitledTestCase(unittest.TestCase):
@@ -33,8 +31,6 @@ class UntitledTestCase(unittest.TestCase):
         wd.find_element_by_name("submit").click()
         wd.find_element_by_link_text("group page").click()
         wd.find_element_by_link_text("Logout").click()
-        wd.find_element_by_name("user").clear()
-        wd.find_element_by_name("user").send_keys("admin")
 
     def is_element_present(self, how, what):
         try: self.wd.find_element(by=how, value=what)
