@@ -1,4 +1,3 @@
-from selenium.webdriver.support.ui import Select
 class ContactHelper:
     def __init__(self, app):
         self.app = app
@@ -6,6 +5,7 @@ class ContactHelper:
 
     def create(self, contact):
         wd = self.app.wd
+        Select = self.app.Select
         wd.find_element_by_link_text("add new").click()
         wd.find_element_by_name("firstname").click()
         wd.find_element_by_name("firstname").clear()
