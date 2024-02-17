@@ -4,20 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99e51694-1b52-462f-ae39-b0db70b536f9" name="Changes" comment="Добавление теста удаления группы&#10;Создание общей фикстуры">
-      <change afterPath="$PROJECT_DIR$/test/test_del_contact.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test_modify_contact.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test_modify_group.py" afterDir="false" />
+    <list default="true" id="99e51694-1b52-462f-ae39-b0db70b536f9" name="Changes" comment="Добавление тестов удаления контактов, группы. &#10;Добавление тестов модификации контактов, группы.&#10;&#10;Не понятно, как обойти момент с model.contact и model.group, как туда можно прописывать новые переменные для изменений, без затрагивания старых и без прописывания кучи старых в параметры теста.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixture/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/session.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/contact.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_del_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_del_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_modify_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_modify_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,14 +42,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/user/PycharmProjects/python_sw_self",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/PycharmProjects/python_sw_self&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\PycharmProjects\python_sw_self\test" />
@@ -67,7 +58,7 @@
       <recent name="C:\Users\user\PycharmProjects\python_sw_self\model" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests in test">
+  <component name="RunManager" selected="Python tests.Python tests in test_modify_group.py">
     <configuration name="Python tests in test" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="python_sw_self" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -142,10 +133,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests in test_modify_group.py" />
         <item itemvalue="Python tests.Python tests in test" />
         <item itemvalue="Python tests.Python tests in test_modify_contact.py" />
         <item itemvalue="Python tests.Python tests in test_del_contact.py" />
-        <item itemvalue="Python tests.Python tests in test_modify_group.py" />
         <item itemvalue="Python tests.pytest in test_add_group.py" />
       </list>
     </recent_temporary>
@@ -244,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707854453392</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Добавление тестов удаления контактов, группы. &#10;Добавление тестов модификации контактов, группы.&#10;&#10;Не понятно, как обойти момент с model.contact и model.group, как туда можно прописывать новые переменные для изменений, без затрагивания старых и без прописывания кучи старых в параметры теста.">
+      <created>1707860694875</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1707860694875</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -268,6 +266,7 @@
     <MESSAGE value="Выделены вспомогательные классы для групп и контактов (как подключать select?)" />
     <MESSAGE value="Исправлен Select" />
     <MESSAGE value="Добавление теста удаления группы&#10;Создание общей фикстуры" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавление теста удаления группы&#10;Создание общей фикстуры" />
+    <MESSAGE value="Добавление тестов удаления контактов, группы. &#10;Добавление тестов модификации контактов, группы.&#10;&#10;Не понятно, как обойти момент с model.contact и model.group, как туда можно прописывать новые переменные для изменений, без затрагивания старых и без прописывания кучи старых в параметры теста." />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавление тестов удаления контактов, группы. &#10;Добавление тестов модификации контактов, группы.&#10;&#10;Не понятно, как обойти момент с model.contact и model.group, как туда можно прописывать новые переменные для изменений, без затрагивания старых и без прописывания кучи старых в параметры теста." />
   </component>
 </project>
